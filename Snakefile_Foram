@@ -1,0 +1,59 @@
+SAMPLES=["H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8", "H9", "H10", "JB-3", "JB-4", "JB-5", "JB-6", "JB-9", "JB-10", "PP3", "PP4", "PP5", "PP6", "PP7", "PP9"]
+
+rule all:
+	input:
+		trimfilt=expand("../data/TrimFilt_reads/tf_{sample}_{nummer}.fastq.gz", sample=SAMPLES, nummer=[1,2]),
+		unpair=expand("../data/Unpaired_reads/{sample}.fastq.qz", sample=SAMPLES),
+		html=expand("../results/HTML_outputs_fastp/{sample}.html", sample=SAMPLES)
+
+
+rule help:
+	shell:
+		"""
+		echo 'Tools used:
+Name:       Version:
+- Snakemake 5.7.1
+- Fastp     0.20.0
+- Megahit   1.2.9
+- canu	    1.9
+- ORFfinder 0.4.3
+- Blastn    2.2.31
+- EggNOG    2.0.1-1-g65acc8b
+- Python    3.7.4'
+
+rule all:                           Speficies all output files created during the pipeline.
+rule Trimming_and_Filtering_reads:  Trims and filters reads based on a quality score of 20.
+rule short_magahit_assembly:        creates contigs from all trimed short-read files
+
+		"""
+
+rule Trimming_and_Filtering_reads:
+	input:
+		forw="../data/Novaseq/{sample}_1.fastq.gz",
+		rev="../data/Novaseq/{sample}_2.fastq.gz"
+
+	output:
+		out_forw="../data/TrimFilt_reads/tf_{sample}_1.fastq.gz",
+		out_rev="../data/TrimFilt_reads/tf_{sample}_2.fastq.gz",
+		out_unpair="../data/Unpaired_reads/{sample}.fastq.qz",
+		out_html="../results/HTML_outputs_fastp/{sample}.html"
+	
+	Threads: 16
+
+	shell:
+		"fastp --threads -i {input.forw} -I {input.rev} -o {output.out_forw} -O {output.out_rev} --unpaired1 {output.out_unpair} --unpaired2 {output.out_unpair} -q 20 -w 16 -x -l 100 -h {output.out_html}"
+	
+
+rule short_magahit_assembly:
+	input:
+		forw="../data/TrimFilt_reads/tf_{sample}_1.fastq.gz"
+		rev="../data/TrimFilt_reads/tf_{sample}_2.fastq.gz"
+
+	output: ../results/megahit/final.contigs.fa
+
+	shadow: "minimal" 
+
+	Threads: 16
+				
+	shell:
+		"/home/richard.wissels/megahit/build/megahit --threads -1 {input.forw} -2 {input.rev} -t 16 -o {output}"

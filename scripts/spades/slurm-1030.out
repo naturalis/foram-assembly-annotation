@@ -1,0 +1,222 @@
+Command line: /home/jan.macher/Spades/SPAdes-3.12.0-Linux/bin/spades.py	--meta	-t	15	--dataset	/home/richard.wissels/Foram-assembly/scripts/spades/dataset.yaml	-o	/home/richard.wissels/Foram-assembly/scripts/spades/spades_out	
+
+System information:
+  SPAdes version: 3.12.0
+  Python version: 2.7.12
+  OS: Linux-4.4.0-171-generic-x86_64-with-Ubuntu-16.04-xenial
+
+Output dir: /home/richard.wissels/Foram-assembly/scripts/spades/spades_out
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Metagenomic mode
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_2.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_2.fastq.gz']
+      right reads: ['/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_1.fastq.gz', '/home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_1.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 33, 55]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /home/richard.wissels/Foram-assembly/scripts/spades/spades_out/tmp
+  Threads: 15
+  Memory limit (in Gb): 250
+
+
+======= SPAdes pipeline started. Log can be found here: /home/richard.wissels/Foram-assembly/scripts/spades/spades_out/spades.log
+
+
+===== Read error correction started. 
+
+
+== Running read error correction tool: /home/jan.macher/Spades/SPAdes-3.12.0-Linux/bin/spades-hammer /home/richard.wissels/Foram-assembly/scripts/spades/spades_out/corrected/configs/config.info
+
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  75)   Starting BayesHammer, built from N/A, git revision N/A
+  0:00:00.000     4M / 4M    INFO    General                 (main.cpp                  :  76)   Loading config from /home/richard.wissels/Foram-assembly/scripts/spades/spades_out/corrected/configs/config.info
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  :  78)   Maximum # of threads to use (adjusted due to OMP capabilities): 15
+  0:00:00.001     4M / 4M    INFO    General                 (memory_limit.cpp          :  49)   Memory limit set to 250 Gb
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  :  86)   Trying to determine PHRED offset
+  0:00:00.001     4M / 4M    INFO    General                 (main.cpp                  :  92)   Determined value is 33
+  0:00:00.002     4M / 4M    INFO    General                 (hammer_tools.cpp          :  36)   Hamming graph threshold tau=1, k=21, subkmer positions = [ 0 10 ]
+  0:00:00.002     4M / 4M    INFO    General                 (main.cpp                  : 113)   Size of aux. kmer data 24 bytes
+     === ITERATION 0 begins ===
+  0:00:00.002     4M / 4M    INFO   K-mer Counting           (kmer_data.cpp             : 280)   Estimating k-mer count
+  0:00:00.259   244M / 244M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_2.fastq.gz
+  0:00:55.010   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 13498427 reads
+  0:00:55.010   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_2.fastq.gz
+  0:01:26.798   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 21196328 reads
+  0:01:26.798   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_2.fastq.gz
+  0:03:42.976   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 54878695 reads
+  0:03:42.976   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_2.fastq.gz
+  0:04:14.422   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 62806490 reads
+  0:04:14.423   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_2.fastq.gz
+  0:05:08.997   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 76900471 reads
+  0:05:08.997   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_2.fastq.gz
+  0:05:19.452   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 79661256 reads
+  0:05:19.453   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_2.fastq.gz
+  0:05:45.851   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 86206125 reads
+  0:05:45.851   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_2.fastq.gz
+  0:06:23.470   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 95038999 reads
+  0:06:23.470   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_2.fastq.gz
+  0:07:06.849   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 105071646 reads
+  0:07:06.849   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_2.fastq.gz
+  0:07:52.353   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 116445661 reads
+  0:07:52.353   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_2.fastq.gz
+  0:08:21.184   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 123607215 reads
+  0:08:21.184   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_2.fastq.gz
+  0:09:08.225   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 135714482 reads
+  0:09:08.225   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_2.fastq.gz
+  0:10:03.031   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 150260339 reads
+  0:10:03.031   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_2.fastq.gz
+  0:10:24.772   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_2.fastq.gz
+  0:10:45.581   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_2.fastq.gz
+  0:11:23.128   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_2.fastq.gz
+  0:12:23.665   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_2.fastq.gz
+  0:13:06.966   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_2.fastq.gz
+  0:13:49.436   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_2.fastq.gz
+  0:14:24.592   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_2.fastq.gz
+  0:16:18.520   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_2.fastq.gz
+  0:16:52.441   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_1.fastq.gz
+  0:17:53.414   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_1.fastq.gz
+  0:18:23.839   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 294)   Processed 275192140 reads
+  0:18:23.839   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_1.fastq.gz
+  0:20:33.494   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_1.fastq.gz
+  0:21:04.281   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_1.fastq.gz
+  0:21:59.312   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_1.fastq.gz
+  0:22:10.048   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_1.fastq.gz
+  0:22:35.761   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_1.fastq.gz
+  0:23:09.942   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_1.fastq.gz
+  0:23:48.281   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_1.fastq.gz
+  0:24:32.038   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_1.fastq.gz
+  0:24:59.923   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_1.fastq.gz
+  0:25:46.330   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_1.fastq.gz
+  0:26:41.327   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_1.fastq.gz
+  0:27:03.889   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_1.fastq.gz
+  0:27:25.262   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_1.fastq.gz
+  0:28:00.291   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_1.fastq.gz
+  0:28:57.554   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_1.fastq.gz
+  0:29:38.442   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_1.fastq.gz
+  0:30:18.440   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_1.fastq.gz
+  0:30:51.911   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_1.fastq.gz
+  0:32:41.165   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 285)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_1.fastq.gz
+  0:33:13.677   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 299)   Total 507991624 reads processed
+  0:33:15.246   300M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 306)   Estimated 10713466438 distinct kmers
+  0:33:15.268    60M / 300M  INFO   K-mer Counting           (kmer_data.cpp             : 311)   Filtering singleton k-mers
+43 8 0
+nslots: 34359738368
+bits per slot: 8 range: 0000080000000000
+  0:33:15.268    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_2.fastq.gz
+  0:41:44.460    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 13498427 reads
+  0:41:44.460    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_2.fastq.gz
+  0:45:05.370    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 21196328 reads
+  0:45:05.370    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_2.fastq.gz
+  0:59:34.566    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 54878695 reads
+  0:59:34.566    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_2.fastq.gz
+  1:02:53.474    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 62806490 reads
+  1:02:53.474    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_2.fastq.gz
+  1:08:28.438    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 76900471 reads
+  1:08:28.438    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_2.fastq.gz
+  1:09:38.694    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 79661256 reads
+  1:09:38.694    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_2.fastq.gz
+  1:12:35.253    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 86206125 reads
+  1:12:35.253    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_2.fastq.gz
+  1:16:17.077    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 95038999 reads
+  1:16:17.080    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_2.fastq.gz
+  1:20:33.797    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 105071646 reads
+  1:20:33.797    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_2.fastq.gz
+  1:25:06.265    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 116445661 reads
+  1:25:06.265    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_2.fastq.gz
+  1:28:42.515    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 123607215 reads
+  1:28:42.515    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_2.fastq.gz
+  1:34:18.294    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 135714482 reads
+  1:34:18.294    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_2.fastq.gz
+  1:41:00.097    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 150260339 reads
+  1:41:00.098    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_2.fastq.gz
+  1:43:35.548    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_2.fastq.gz
+  1:45:52.593    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_2.fastq.gz
+  1:49:53.060    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_2.fastq.gz
+  1:58:06.999    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_2.fastq.gz
+  2:03:20.521    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_2.fastq.gz
+  2:08:41.928    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_2.fastq.gz
+  2:13:01.477    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_2.fastq.gz
+  2:25:38.172    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_2.fastq.gz
+  2:29:21.170    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_1.fastq.gz
+  2:35:10.663    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_1.fastq.gz
+  2:38:05.758    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 326)   Processed 275192140 reads
+  2:38:05.761    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_1.fastq.gz
+  2:51:55.327    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_1.fastq.gz
+  2:55:16.309    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_1.fastq.gz
+  3:01:06.403    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_1.fastq.gz
+  3:02:15.992    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_1.fastq.gz
+  3:05:05.755    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_1.fastq.gz
+  3:08:32.783    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_1.fastq.gz
+  3:12:46.852    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_1.fastq.gz
+  3:17:24.409    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_1.fastq.gz
+  3:20:35.612    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_1.fastq.gz
+  3:25:53.186    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_1.fastq.gz
+  3:31:53.777    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_1.fastq.gz
+  3:34:11.277    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_1.fastq.gz
+  3:36:08.150    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_1.fastq.gz
+  3:39:48.725    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_1.fastq.gz
+  3:45:09.597    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_1.fastq.gz
+  3:48:42.357    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP5_1.fastq.gz
+  3:52:19.200    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP6_1.fastq.gz
+  3:55:24.483    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP7_1.fastq.gz
+  4:05:41.551    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 317)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP9_1.fastq.gz
+  4:09:15.121    40G / 40G   INFO   K-mer Counting           (kmer_data.cpp             : 331)   Total 507991624 reads processed
+  4:09:15.122    40G / 40G   INFO   K-mer Index Building     (kmer_index_builder.hpp    : 301)   Building kmer index
+  4:09:15.122    40G / 40G   INFO    General                 (kmer_index_builder.hpp    : 117)   Splitting kmer instances into 240 files using 15 threads. This might take a while.
+  4:09:15.122    40G / 40G   INFO    General                 (file_limit.hpp            :  32)   Open file limit set to 1024
+  4:09:15.122    40G / 40G   INFO    General                 (kmer_splitters.hpp        :  89)   Memory available for splitting buffers: 4.65339 Gb
+  4:09:15.122    40G / 40G   INFO    General                 (kmer_splitters.hpp        :  97)   Using cell size of 279620
+  4:09:15.173    48G / 48G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H1_2.fastq.gz
+  4:09:49.517    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 3525819 reads
+  4:10:24.910    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 7065433 reads
+  4:11:00.855    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 10587057 reads
+  4:11:28.858    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 13498427 reads
+  4:11:28.858    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H2_2.fastq.gz
+  4:12:03.286    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 17025583 reads
+  4:12:37.159    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 20545580 reads
+  4:12:43.401    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 21196328 reads
+  4:12:43.401    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H3_2.fastq.gz
+  4:13:17.796    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 24715911 reads
+  4:13:51.518    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 28259775 reads
+  4:14:28.246    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 31747554 reads
+  4:15:01.045    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 35276629 reads
+  4:18:30.826    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H4_2.fastq.gz
+  4:20:09.822    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H5_2.fastq.gz
+  4:21:34.143    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 69889056 reads
+  4:22:57.569    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H6_2.fastq.gz
+  4:23:31.644    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H7_2.fastq.gz
+  4:24:49.987    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H8_2.fastq.gz
+  4:26:25.791    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H9_2.fastq.gz
+  4:28:19.696    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_H10_2.fastq.gz
+  4:30:34.123    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-3_2.fastq.gz
+  4:31:57.690    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-4_2.fastq.gz
+  4:34:01.913    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             : 107)   Processed 134334037 reads
+  4:34:19.144    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-5_2.fastq.gz
+  4:37:28.126    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-6_2.fastq.gz
+  4:38:33.535    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-9_2.fastq.gz
+  4:39:38.006    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_JB-10_2.fastq.gz
+  4:41:26.951    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP3_2.fastq.gz
+  4:44:53.225    48G / 49G   INFO   K-mer Splitting          (kmer_data.cpp             :  97)   Processing /home/richard.wissels/Foram-assembly/data/TrimFilt_reads/tf_PP4_2.fastq.gz
+  4:46:34.628    49G / 49G   ERROR   General                 (kmer_splitters.hpp        : 145)   I/O error! Incomplete write! Reason: No space left on device. Error code: 28
+
+
+== Error ==  system call for: "['/home/jan.macher/Spades/SPAdes-3.12.0-Linux/bin/spades-hammer', '/home/richard.wissels/Foram-assembly/scripts/spades/spades_out/corrected/configs/config.info']" finished abnormally, err code: 255
+
+In case you have troubles running SPAdes, you can write to spades.support@cab.spbu.ru
+or report an issue on our GitHub repository github.com/ablab/spades
+Please provide us with params.txt and spades.log files from the output directory.
